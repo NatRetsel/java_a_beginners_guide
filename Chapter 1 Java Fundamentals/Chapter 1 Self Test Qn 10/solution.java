@@ -4,13 +4,17 @@
  */
 class InchesToMeter {
     public static void main(String[] args){
-        double inches, meters, feet;
-        
-        for (feet=1; feet <= 12; feet++){
-            inches = feet * 12;
+        double inches, meters; 
+        int counter = 0;
+        for (inches=1; inches <= 144; inches++){
             meters = inches * 39.37; // convert to liters
             System.out.println(inches + " inches is " + meters + " meters.");
-            System.out.println();
+            ++counter;
+
+            if (counter == 12){
+                System.out.println();
+                counter = 0;
+            }
         }
     }
  }
