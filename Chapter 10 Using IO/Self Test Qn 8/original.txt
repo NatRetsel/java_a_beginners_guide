@@ -1,0 +1,4 @@
+/*
+ * Rewrite the program described in question 7 so that it uses the character stream classes. This time, use the try-with-resources
+ * statement to automatically close the file
+ */
